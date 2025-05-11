@@ -18,7 +18,7 @@ function Login() {
         },
         onSubmit: async (values) => {
             try {
-                const response = await axios.post("http://localhost:3000/login",values)
+                const response = await axios.post("https://imdbclone-backend-aiar.onrender.com/login",values)
                 if (response.status == 200) {
                     window.localStorage.setItem("mytoken", response.data.message)
                     navigate('/')

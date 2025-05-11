@@ -5,7 +5,7 @@ export const UserProvider = ({ children }) => {
     const [movies,setmovies]=useState([])
     const [isloggedin,setloggedin]=useState(true)
     const getdata=async()=>{
-       const response =await axios.get("http://localhost:3000/listmovies")
+       const response =await axios.get("https://imdbclone-backend-aiar.onrender.com/listmovies")
        setmovies(response.data)
        
     }

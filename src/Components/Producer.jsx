@@ -17,7 +17,7 @@ function Producer() {
                 return error
             },
             onSubmit: async(values) => {
-               await axios.post("http://localhost:3000/addproducer",values)
+               await axios.post("https://imdbclone-backend-aiar.onrender.com/addproducer",values)
                 navigate('/addmovie')
             }
         })

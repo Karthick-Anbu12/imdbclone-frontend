@@ -10,7 +10,7 @@ function View() {
   const [info, setinfo] = useState([])
   const getdata = async () => {
     try {
-      const res = await axios.get(`http://localhost:3000/getmovie/${params.id}`)
+      const res = await axios.get(`https://imdbclone-backend-aiar.onrender.com/getmovie/${params.id}`)
       setinfo(res.data)
     } catch (error) {
       console.log("something went wrong")
